@@ -98,7 +98,7 @@ namespace HealingOnKillBasedOnMedicineSkill
             int amountToHeal = TaleWorlds.Library.MathF.Round(calculatedNumber);
             if (settings.ShowDetailedInformation)
             {
-                var message = new TextObject("{=HOKBOMS_93u1X}{HERO} healed {HEAL_AMOUNT} HP. Med skill: {MED_SKILL}.\nCalculated (float): {CALC_HEAL}")
+                var message = new TextObject("{=HOKBOMS_93u1X}{HERO} + {HEAL_AMOUNT} HP. Med: {MED_SKILL}. Float: {CALC_HEAL}")
                     .SetTextVariable("HERO", agent.Name)
                     .SetTextVariable("HEAL_AMOUNT", amountToHeal)
                     .SetTextVariable("MED_SKILL", currentMedSkill)

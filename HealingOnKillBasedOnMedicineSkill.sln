@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Healing On Kill Based On Medicine Skill", "Healing On Kill Based On Medicine Skill.csproj", "{E952A082-A41E-4466-A65A-145325A2E6D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealingOnKillBasedOnMedicineSkill", "HealingOnKillBasedOnMedicineSkill.csproj", "{17D4C9EE-9EC5-41D6-8C0F-149AE6539E6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E952A082-A41E-4466-A65A-145325A2E6D3}.Debug|x64.ActiveCfg = Debug|x64
-		{E952A082-A41E-4466-A65A-145325A2E6D3}.Debug|x64.Build.0 = Debug|x64
-		{E952A082-A41E-4466-A65A-145325A2E6D3}.Release|x64.ActiveCfg = Release|x64
-		{E952A082-A41E-4466-A65A-145325A2E6D3}.Release|x64.Build.0 = Release|x64
+		{17D4C9EE-9EC5-41D6-8C0F-149AE6539E6C}.Debug|x64.ActiveCfg = Debug|x64
+		{17D4C9EE-9EC5-41D6-8C0F-149AE6539E6C}.Debug|x64.Build.0 = Debug|x64
+		{17D4C9EE-9EC5-41D6-8C0F-149AE6539E6C}.Release|x64.ActiveCfg = Release|x64
+		{17D4C9EE-9EC5-41D6-8C0F-149AE6539E6C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="日本語" />
+	</tags>
+	<strings>
+		<string id="HOKBOMS_93u1X" text="{HERO} が {HEAL_AMOUNT} の HP を回復しました。医療スキル: {MED_SKILL}。\n計算値 (float): {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="医療スキルに基づいたキル時の回復" />
+		<string id="HOKBOMS_Sa1Xq" text="好みに合わせて設定を調整する" />
+		<string id="HOKBOMS_WxWoy" text="敵を倒すと回復" />
+		<string id="HOKBOMS_mfxHR" text="この変更を有効/無効にします。[デフォルト: 有効]" />
+		<string id="HOKBOMS_qwsYu" text="医療スキルの閾値" />
+		<string id="HOKBOMS_YikUB" text="治癒が止まったときの最大の医療スキル。\nこのスキルレベルでは、ヒーローは下記の「最大治癒量」設定に従って治癒します。[デフォルト: 300]" />
+		<string id="HOKBOMS_UkXap" text="最大回復量" />
+		<string id="HOKBOMS_d0Tuf" text="ヒーローの医療スキルが「医療スキルしきい値」に達したときに敵を倒したときに回復できる最大体力。[デフォルト: 8]" />
+		<string id="HOKBOMS_ccEcT" text="" />	<!-- {=HOKBOMS_ccEcT} -->
+		<string id="HOKBOMS_WvB9h" text="" />	<!-- {=HOKBOMS_WvB9h} -->
+		<string id="HOKBOMS_9d2gl" text="" />	<!-- {=HOKBOMS_9d2gl} -->
+		<string id="HOKBOMS_DnQYP" text="" />	<!-- {=HOKBOMS_DnQYP} -->
+		<string id="HOKBOMS_RTLLF" text="" />	<!-- {=HOKBOMS_RTLLF} -->
+		<string id="HOKBOMS_Lc0vb" text="" />	<!-- {=HOKBOMS_Lc0vb} -->
+		<string id="HOKBOMS_3gKf6" text="" />	<!-- {=HOKBOMS_3gKf6} -->
+		<string id="HOKBOMS_jqX8e" text="" />	<!-- {=HOKBOMS_jqX8e} -->
+		<string id="HOKBOMS_bZ2sg" text="" />	<!-- {=HOKBOMS_bZ2sg} -->
+		<string id="HOKBOMS_73qfZ" text="" />	<!-- {=HOKBOMS_73qfZ} -->
+		<string id="HOKBOMS_QJk86" text="" />	<!-- {=HOKBOMS_QJk86} -->
+		<string id="HOKBOMS_q6hG1" text="" />	<!-- {=HOKBOMS_q6hG1} -->
+		<string id="HOKBOMS_rZdVS" text="" />	<!-- {=HOKBOMS_rZdVS} -->
+		<string id="HOKBOMS_O9bNV" text="" />	<!-- {=HOKBOMS_O9bNV} -->
+		<string id="HOKBOMS_h6J6P" text="" />	<!-- {=HOKBOMS_h6J6P} -->
+		<string id="HOKBOMS_1aRZ3" text="モデレーター設定" />
+		<string id="HOKBOMS_AYLgG" text="詳細情報を表示" />
+		<string id="HOKBOMS_2fbFj" text="どのヒーローが敵を倒したか、また倒した後にどれだけ体力が回復するかを表示します。\nまた、実際の回復量を整数で決定するために四捨五入された計算された浮動小数点数も表示します。\n式: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal)。[デフォルト: 無効]" />
+		<string id="HOKBOMS_5MPXR" text="" />	<!-- {=HOKBOMS_5MPXR} -->
+		<string id="HOKBOMS_q46Oj" text="" />	<!-- {=HOKBOMS_q46Oj} -->
+		<string id="HOKBOMS_2DtDS" text="" />	<!-- {=HOKBOMS_2DtDS} -->
+		<string id="HOKBOMS_hoh62" text="" />	<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_TvJuP" text="" />	<!-- {=HOKBOMS_TvJuP} -->
+		<string id="HOKBOMS_5ReZh" text="" />	<!-- {=HOKBOMS_5ReZh} -->
+		<string id="HOKBOMS_4XArl" text="" />	<!-- {=HOKBOMS_4XArl} -->
+		<string id="HOKBOMS_xTwCq" text="" />	<!-- {=HOKBOMS_xTwCq} -->
+		<string id="HOKBOMS_OaIs1" text="" />	<!-- {=HOKBOMS_OaIs1} -->
+		<string id="HOKBOMS_xhfdH" text="" />	<!-- {=HOKBOMS_xhfdH} -->
+		<string id="HOKBOMS_rZPFr" text="" />	<!-- {=HOKBOMS_rZPFr} -->
+		<string id="HOKBOMS_eM5Cd" text="" />	<!-- {=HOKBOMS_eM5Cd} -->
+		<string id="HOKBOMS_BnvfI" text="" />	<!-- {=HOKBOMS_BnvfI} -->
+	</strings>
+</base>

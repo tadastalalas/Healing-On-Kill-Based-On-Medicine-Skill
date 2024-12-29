@@ -6,7 +6,7 @@
             "name": "Start Debugging [net472] (Steam/GOG/Epic)",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}\\Healing_On_Kill_Based_On_Medicine_Skill.csproj",
+            "projectPath": "${workspaceFolder}\\HealingOnKillBasedOnMedicineSkill.csproj",
             "launchConfigurationId": "TargetFramework=net472;Bannerlord"
         },
         {
@@ -26,7 +26,7 @@
             "name": "Start Debugging [net6] (Xbox)",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}\\Healing_On_Kill_Based_On_Medicine_Skill.csproj",
+            "projectPath": "${workspaceFolder}\\HealingOnKillBasedOnMedicineSkill.csproj",
             "launchConfigurationId": "TargetFramework=net6;Bannerlord"
         },
         {

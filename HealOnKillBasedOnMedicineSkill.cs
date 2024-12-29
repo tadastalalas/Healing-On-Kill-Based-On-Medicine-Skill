@@ -75,9 +75,13 @@ namespace HealingOnKillBasedOnMedicineSkill
 
             foreach (Agent agent in this.allHeroes)
             {
+                int amountToHeal = CalculateHowMuchToHeal(agent);
+
+                if (affectedAgent.IsHero)
+                    amountToHeal *= 2;
+
                 if (agent != null && agent == affectorAgent)
                 {
-                    int amountToHeal = CalculateHowMuchToHeal(agent);
                     agent.Health += amountToHeal;
                     if (agent.Health > agent.HealthLimit)
                         agent.Health = agent.HealthLimit;

@@ -67,7 +67,7 @@ namespace HealingOnKillBasedOnMedicineSkill
         {
             base.OnAgentRemoved(affectedAgent, affectorAgent, agentState, blow);
 
-            if (!settings.EnableHealingOnEnemyKill)
+            if (!settings.EnableHealingOnEnemyKill && !affectorAgent.IsHero)
                 return;
 
             if (affectedAgent == null || affectorAgent == null || affectedAgent == affectorAgent)
@@ -75,39 +75,39 @@ namespace HealingOnKillBasedOnMedicineSkill
 
             foreach (Agent agent in this.allHeroes)
             {
-                int amountToHeal = CalculateHowMuchToHeal(agent);
-
-                if (affectedAgent.IsHero)
-                    amountToHeal *= 2;
-
                 if (agent != null && agent == affectorAgent)
                 {
+                    int maxHPToHeal = settings.MaxHPToHeal;
+                    int maxMedSkillThreshold = settings.MaxMedSkillThreshold;
+                    int currentMedSkill = GetMedicineSkillLevel(agent);
+                    float calculatedNumber = ((float)currentMedSkill / ((float)maxMedSkillThreshold / (float)maxHPToHeal));
+
+                    if (calculatedNumber > settings.MaxHPToHeal)
+                        calculatedNumber = maxHPToHeal;
+
+                    int amountToHeal = TaleWorlds.Library.MathF.Round(calculatedNumber);
+
+                    if (affectedAgent.IsHero)
+                        amountToHeal *= 2;
+
                     agent.Health += amountToHeal;
                     if (agent.Health > agent.HealthLimit)
                         agent.Health = agent.HealthLimit;
+
+                    if (settings.ShowDetailedInformation)
+                        DisplayDetailedInformationMessage(agent, amountToHeal, currentMedSkill, calculatedNumber);
                 }
             }
         }
 
-        private int CalculateHowMuchToHeal(Agent agent)
+        private void DisplayDetailedInformationMessage(Agent agent, int amountToHeal, float currentMedSkill, float calculatedNumber)
         {
-            int maxHPToHeal = settings.MaxHPToHeal;
-            int maxMedSkillThreshold = settings.MaxMedSkillThreshold;
-            int currentMedSkill = GetMedicineSkillLevel(agent);
-            float calculatedNumber = ((float)currentMedSkill / ((float)maxMedSkillThreshold / (float)maxHPToHeal));
-            int amountToHeal = TaleWorlds.Library.MathF.Round(calculatedNumber);
-            if (settings.ShowDetailedInformation)
-            {
-                var message = new TextObject("{=HOKBOMS_93u1X}{HERO} + {HEAL_AMOUNT} HP. Med: {MED_SKILL}. Float: {CALC_HEAL}")
+            var message = new TextObject("{=HOKBOMS_93u1X}{HERO} + {HEAL_AMOUNT} HP. Med: {MED_SKILL}. Float: {CALC_HEAL}")
                     .SetTextVariable("HERO", agent.Name)
                     .SetTextVariable("HEAL_AMOUNT", amountToHeal)
                     .SetTextVariable("MED_SKILL", currentMedSkill)
-                    .SetTextVariable("CALC_HEAL", calculatedNumber);
-                InformationManager.DisplayMessage(new InformationMessage(message.ToString(), Colors.Red));
-            }
-            if (calculatedNumber > maxHPToHeal)
-            calculatedNumber = maxHPToHeal;
-            return amountToHeal;
+                    .SetTextVariable("CALC_HEAL", calculatedNumber.ToString("F2"));
+            InformationManager.DisplayMessage(new InformationMessage(message.ToString(), Colors.Red));
         }
 
         private static int GetMedicineSkillLevel(Agent agent)

@@ -4,45 +4,45 @@
 		<tag language="Français" />
 	</tags>
 	<strings>
-		<string id="HOKBOMS_93u1X" text="{HERO} a soigné {HEAL_AMOUNT} PV. Compétence médicale : {MED_SKILL}.\nCalculé (float) : {CALC_HEAL}" />
-		<string id="HOKBOMS_1ccm4" text="Guérison après élimination basée sur la compétence en médecine" />
-		<string id="HOKBOMS_Sa1Xq" text="Ajustez les paramètres selon votre goût personnel" />
-		<string id="HOKBOMS_WxWoy" text="Soins sur l'ennemi tué" />
-		<string id="HOKBOMS_mfxHR" text="Activer/désactiver cette modification. [Par défaut : Activé]" />
-		<string id="HOKBOMS_qwsYu" text="Seuil de compétence en médecine" />
-		<string id="HOKBOMS_YikUB" text="La compétence médicale maximale lorsque la guérison cesse d'augmenter.\nÀ ce niveau de compétence, le héros sera soigné par le paramètre « Quantité maximale de soins » ci-dessous. [Par défaut : 300]" />
-		<string id="HOKBOMS_UkXap" text="Quantité maximale de guérison" />
-		<string id="HOKBOMS_d0Tuf" text="Quantité maximale de points de vie qu'un héros peut soigner lorsqu'il tue un ennemi lorsque sa compétence en médecine atteint le « Seuil de compétence en médecine ». [Par défaut : 8]" />
-		<string id="HOKBOMS_ccEcT" text="" />	<!-- {=HOKBOMS_ccEcT} -->
-		<string id="HOKBOMS_WvB9h" text="" />	<!-- {=HOKBOMS_WvB9h} -->
-		<string id="HOKBOMS_9d2gl" text="" />	<!-- {=HOKBOMS_9d2gl} -->
-		<string id="HOKBOMS_DnQYP" text="" />	<!-- {=HOKBOMS_DnQYP} -->
-		<string id="HOKBOMS_RTLLF" text="" />	<!-- {=HOKBOMS_RTLLF} -->
-		<string id="HOKBOMS_Lc0vb" text="" />	<!-- {=HOKBOMS_Lc0vb} -->
-		<string id="HOKBOMS_3gKf6" text="" />	<!-- {=HOKBOMS_3gKf6} -->
-		<string id="HOKBOMS_jqX8e" text="" />	<!-- {=HOKBOMS_jqX8e} -->
-		<string id="HOKBOMS_bZ2sg" text="" />	<!-- {=HOKBOMS_bZ2sg} -->
-		<string id="HOKBOMS_73qfZ" text="" />	<!-- {=HOKBOMS_73qfZ} -->
-		<string id="HOKBOMS_QJk86" text="" />	<!-- {=HOKBOMS_QJk86} -->
-		<string id="HOKBOMS_q6hG1" text="" />	<!-- {=HOKBOMS_q6hG1} -->
-		<string id="HOKBOMS_rZdVS" text="" />	<!-- {=HOKBOMS_rZdVS} -->
-		<string id="HOKBOMS_O9bNV" text="" />	<!-- {=HOKBOMS_O9bNV} -->
-		<string id="HOKBOMS_h6J6P" text="" />	<!-- {=HOKBOMS_h6J6P} -->
-		<string id="HOKBOMS_1aRZ3" text="Paramètres du modérateur" />
-		<string id="HOKBOMS_AYLgG" text="Afficher les informations détaillées" />
-		<string id="HOKBOMS_2fbFj" text="Affiche le héros spécifique qui tue un ennemi et la quantité de santé qu'il récupère après l'avoir tué.\nAffiche également un nombre flottant calculé qui est arrondi pour déterminer la quantité de soins réelle en nombre entier.\nFormule : currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Par défaut : désactivé]" />
-		<string id="HOKBOMS_5MPXR" text="" />	<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />	<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />	<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />	<!-- {=HOKBOMS_hoh62} -->
-		<string id="HOKBOMS_TvJuP" text="" />	<!-- {=HOKBOMS_TvJuP} -->
-		<string id="HOKBOMS_5ReZh" text="" />	<!-- {=HOKBOMS_5ReZh} -->
-		<string id="HOKBOMS_4XArl" text="" />	<!-- {=HOKBOMS_4XArl} -->
-		<string id="HOKBOMS_xTwCq" text="" />	<!-- {=HOKBOMS_xTwCq} -->
-		<string id="HOKBOMS_OaIs1" text="" />	<!-- {=HOKBOMS_OaIs1} -->
-		<string id="HOKBOMS_xhfdH" text="" />	<!-- {=HOKBOMS_xhfdH} -->
-		<string id="HOKBOMS_rZPFr" text="" />	<!-- {=HOKBOMS_rZPFr} -->
-		<string id="HOKBOMS_eM5Cd" text="" />	<!-- {=HOKBOMS_eM5Cd} -->
-		<string id="HOKBOMS_BnvfI" text="" />	<!-- {=HOKBOMS_BnvfI} -->
+		<string id="HOKBOMS_93u1X" text="{HERO} a renversé {AFFECTED_AGENT}. A récupéré {HEAL_AMOUNT} PV." />
+		<string id="HOKBOMS_1ccm4" text="{HERO} a tué {AFFECTED_AGENT}. + {HEAL_AMOUNT} PV.\nCompétence en médecine : {MED_SKILL}. Flottant : {CALC_HEAL}" />
+		<string id="HOKBOMS_Sa1Xq" text="{HERO} a obtenu une expérience en compétence Médecine : {MED_EXP} ({EXP_PERC} %)\nExpérience nécessaire au total : {MED_EXP_NEED}\nCompétence Médecine : {MED_SKILL}" />
+		<string id="HOKBOMS_WxWoy" text="Guérison après élimination basée sur la compétence en médecine" />
+		<string id="HOKBOMS_mfxHR" text="Principaux paramètres de modification" />
+		<string id="HOKBOMS_qwsYu" text="Soins sur l'ennemi tué" />
+		<string id="HOKBOMS_YikUB" text="Activer/désactiver cette modification. [Par défaut : Activé]" />
+		<string id="HOKBOMS_UkXap" text="Seuil de compétence en médecine" />
+		<string id="HOKBOMS_d0Tuf" text="La compétence médicale maximale lorsque la guérison cesse d'augmenter.\nÀ ce niveau de compétence, le héros sera soigné par le paramètre « Quantité maximale de soins » ci-dessous. [Par défaut : 300]" />
+		<string id="HOKBOMS_ccEcT" text="Quantité maximale de guérison" />
+		<string id="HOKBOMS_WvB9h" text="Quantité maximale de points de vie qu'un héros peut soigner lorsqu'il tue un ennemi lorsque sa compétence en médecine atteint le « Seuil de compétence en médecine ». [Par défaut : 10]" />
+		<string id="HOKBOMS_9d2gl" text="Afficher la notification à l'écran Héros contre Héros" />
+		<string id="HOKBOMS_DnQYP" text="Affiche une notification à l'écran lorsqu'un héros en renverse un autre. [Par défaut : activé]" />
+		<string id="HOKBOMS_RTLLF" text="Ajustements de la progression des compétences en médecine" />
+		<string id="HOKBOMS_Lc0vb" text="Gagnez de l'expérience en médecine en soignant" />
+		<string id="HOKBOMS_3gKf6" text="Chaque héros vivant dans le jeu obtient de l'expérience en médecine lorsqu'il guérit de ses blessures après une bataille. [Par défaut : Activé]" />
+		<string id="HOKBOMS_jqX8e" text="Utiliser le modificateur de taux d'apprentissage" />
+		<string id="HOKBOMS_bZ2sg" text="L'expérience calculée sera soumise au modificateur de taux d'apprentissage comme prévu par le jeu. Si cette option est désactivée, les héros obtiendront une expérience brute calculée telle quelle (comme si le taux d'apprentissage était x1). [Par défaut : désactivé]" />
+		<string id="HOKBOMS_73qfZ" text="Diviseur de pourcentage d'expérience" />
+		<string id="HOKBOMS_QJk86" text="(Seuil de compétence en médecine / Compétence actuelle en médecine du héros) / Diviseur de pourcentage d'expérience = Pourcentage pour gagner de l'expérience pour la compétence en médecine du héros. [Par défaut : 200]" />
+		<string id="HOKBOMS_q6hG1" text="Paramètres de débogage" />
+		<string id="HOKBOMS_rZdVS" text="Afficher les informations de guérison" />
+		<string id="HOKBOMS_O9bNV" text="Affiche le héros spécifique qui tue un ennemi et la quantité de santé qu'il récupère après l'avoir tué.\nAffiche également un nombre flottant calculé qui est arrondi pour déterminer la quantité de soins réelle en nombre entier.\nFormule : currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Par défaut : désactivé]" />
+		<string id="HOKBOMS_h6J6P" text="Afficher les informations sur l'expérience médicale" />
+		<string id="HOKBOMS_1aRZ3" text="Affiche des informations détaillées sur tous les héros du journal, qui acquièrent de l'expérience en médecine toutes les heures. [Par défaut : désactivé]" />
+		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
+		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
+		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
+		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
+		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
+		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
+		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
+		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->
+		<string id="HOKBOMS_xTwCq" text="" />		<!-- {=HOKBOMS_xTwCq} -->
+		<string id="HOKBOMS_OaIs1" text="" />		<!-- {=HOKBOMS_OaIs1} -->
+		<string id="HOKBOMS_xhfdH" text="" />		<!-- {=HOKBOMS_xhfdH} -->
+		<string id="HOKBOMS_rZPFr" text="" />		<!-- {=HOKBOMS_rZPFr} -->
+		<string id="HOKBOMS_eM5Cd" text="" />		<!-- {=HOKBOMS_eM5Cd} -->
+		<string id="HOKBOMS_BnvfI" text="" />		<!-- {=HOKBOMS_BnvfI} -->
 	</strings>
 </base>

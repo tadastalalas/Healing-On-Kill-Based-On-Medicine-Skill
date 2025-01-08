@@ -4,45 +4,45 @@
 		<tag language="繁體中文" />
 	</tags>
 	<strings>
-		<string id="HOKBOMS_93u1X" text="{HERO} 恢復了 {HEAL_AMOUNT} 點生命值。醫療技能：{MED_SKILL}。\n計算（浮點數）：{CALC_HEAL}" />
-		<string id="HOKBOMS_1ccm4" text="根據醫療技能殺敵後進行治療" />
-		<string id="HOKBOMS_Sa1Xq" text="依個人喜好調整設定" />
-		<string id="HOKBOMS_WxWoy" text="治療被殺死的敵人" />
-		<string id="HOKBOMS_mfxHR" text="啟用/停用此修改。 [預設：啟用]" />
-		<string id="HOKBOMS_qwsYu" text="醫療技能門檻" />
-		<string id="HOKBOMS_YikUB" text="治療停止增加時的最大醫療技能。 \n在此技能等級下，英雄將透過下面的『最大治療量』設定進行治療。 [預設值：300]" />
-		<string id="HOKBOMS_UkXap" text="最大治療量" />
-		<string id="HOKBOMS_d0Tuf" text="當英雄的醫療技能達到「醫療技能閾值」時，英雄殺死敵人後可以治療的最大生命值。 [預設值：8]" />
-		<string id="HOKBOMS_ccEcT" text="" />	<!-- {=HOKBOMS_ccEcT} -->
-		<string id="HOKBOMS_WvB9h" text="" />	<!-- {=HOKBOMS_WvB9h} -->
-		<string id="HOKBOMS_9d2gl" text="" />	<!-- {=HOKBOMS_9d2gl} -->
-		<string id="HOKBOMS_DnQYP" text="" />	<!-- {=HOKBOMS_DnQYP} -->
-		<string id="HOKBOMS_RTLLF" text="" />	<!-- {=HOKBOMS_RTLLF} -->
-		<string id="HOKBOMS_Lc0vb" text="" />	<!-- {=HOKBOMS_Lc0vb} -->
-		<string id="HOKBOMS_3gKf6" text="" />	<!-- {=HOKBOMS_3gKf6} -->
-		<string id="HOKBOMS_jqX8e" text="" />	<!-- {=HOKBOMS_jqX8e} -->
-		<string id="HOKBOMS_bZ2sg" text="" />	<!-- {=HOKBOMS_bZ2sg} -->
-		<string id="HOKBOMS_73qfZ" text="" />	<!-- {=HOKBOMS_73qfZ} -->
-		<string id="HOKBOMS_QJk86" text="" />	<!-- {=HOKBOMS_QJk86} -->
-		<string id="HOKBOMS_q6hG1" text="" />	<!-- {=HOKBOMS_q6hG1} -->
-		<string id="HOKBOMS_rZdVS" text="" />	<!-- {=HOKBOMS_rZdVS} -->
-		<string id="HOKBOMS_O9bNV" text="" />	<!-- {=HOKBOMS_O9bNV} -->
-		<string id="HOKBOMS_h6J6P" text="" />	<!-- {=HOKBOMS_h6J6P} -->
-		<string id="HOKBOMS_1aRZ3" text="版主設定" />
-		<string id="HOKBOMS_AYLgG" text="顯示詳細信息" />
-		<string id="HOKBOMS_2fbFj" text="顯示哪個特定英雄殺死了敵人以及殺死後他恢復了多少生命值。 / maxHPToHeal)。 [預設：停用]" />
-		<string id="HOKBOMS_5MPXR" text="" />	<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />	<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />	<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />	<!-- {=HOKBOMS_hoh62} -->
-		<string id="HOKBOMS_TvJuP" text="" />	<!-- {=HOKBOMS_TvJuP} -->
-		<string id="HOKBOMS_5ReZh" text="" />	<!-- {=HOKBOMS_5ReZh} -->
-		<string id="HOKBOMS_4XArl" text="" />	<!-- {=HOKBOMS_4XArl} -->
-		<string id="HOKBOMS_xTwCq" text="" />	<!-- {=HOKBOMS_xTwCq} -->
-		<string id="HOKBOMS_OaIs1" text="" />	<!-- {=HOKBOMS_OaIs1} -->
-		<string id="HOKBOMS_xhfdH" text="" />	<!-- {=HOKBOMS_xhfdH} -->
-		<string id="HOKBOMS_rZPFr" text="" />	<!-- {=HOKBOMS_rZPFr} -->
-		<string id="HOKBOMS_eM5Cd" text="" />	<!-- {=HOKBOMS_eM5Cd} -->
-		<string id="HOKBOMS_BnvfI" text="" />	<!-- {=HOKBOMS_BnvfI} -->
+		<string id="HOKBOMS_93u1X" text="{HERO} 擊倒了{AFFECTED_AGENT}。恢復了 {HEAL_AMOUNT} 點生命值。" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} 殺死了{AFFECTED_AGENT}。 + {HEAL_AMOUNT} HP。浮點數： {CALC_HEAL}" />
+		<string id="HOKBOMS_Sa1Xq" text="{HERO} 獲得醫藥技能經驗：{MED_EXP} ({EXP_PERC} %)\n總共需要經驗：{MED_EXP_NEED}\n醫藥技能：{MED_SKILL}" />
+		<string id="HOKBOMS_WxWoy" text="根據醫療技能殺敵後治療" />
+		<string id="HOKBOMS_mfxHR" text="主要修改設定" />
+		<string id="HOKBOMS_qwsYu" text="治療被殺死的敵人" />
+		<string id="HOKBOMS_YikUB" text="啟用/停用此修改。 [預設：啟用]" />
+		<string id="HOKBOMS_UkXap" text="醫療技能門檻" />
+		<string id="HOKBOMS_d0Tuf" text="治療停止增加時的最大醫療技能。 \n在此技能等級下，英雄將透過下面的『最大治療量』設定進行治療。 [預設值：300]" />
+		<string id="HOKBOMS_ccEcT" text="最大治療量" />
+		<string id="HOKBOMS_WvB9h" text="當英雄的醫療技能達到『醫療技能閾值』時，英雄在殺死敵人後可以治療的最大生命值。 [預設值：10]" />
+		<string id="HOKBOMS_9d2gl" text="在螢幕上顯示英雄對決英雄的通知" />
+		<string id="HOKBOMS_DnQYP" text="當任何英雄擊倒另一個英雄時顯示螢幕通知。 [預設：啟用]" />
+		<string id="HOKBOMS_RTLLF" text="醫療技能進度調整" />
+		<string id="HOKBOMS_Lc0vb" text="治療時獲得醫學經驗" />
+		<string id="HOKBOMS_3gKf6" text="遊戲中的每個活著的英雄在戰鬥後治療傷口時都會獲得醫療技能經驗。 [預設：啟用]" />
+		<string id="HOKBOMS_jqX8e" text="使用學習率修改器" />
+		<string id="HOKBOMS_bZ2sg" text="計算出的經驗將依照遊戲的意圖經過學習率修改器。如果禁用，英雄將獲得原始計算的經驗（就好像學習率為 x1）。 [預設：停用]" />
+		<string id="HOKBOMS_73qfZ" text="經驗百分比除數" />
+		<string id="HOKBOMS_QJk86" text="（醫術門檻/當前英雄醫術）/經驗百分比除數=英雄醫術獲得經驗的百分比。 [預設值：200]" />
+		<string id="HOKBOMS_q6hG1" text="偵錯設定" />
+		<string id="HOKBOMS_rZdVS" text="顯示治療訊息" />
+		<string id="HOKBOMS_O9bNV" text="顯示哪個特定英雄殺死了敵人以及殺死後他恢復了多少生命值。 / maxHPToHeal)。 [預設：停用]" />
+		<string id="HOKBOMS_h6J6P" text="顯示用藥經驗資訊" />
+		<string id="HOKBOMS_1aRZ3" text="顯示日誌中所有英雄的詳細信息，每小時獲得醫藥技能經驗。 [預設：停用]" />
+		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
+		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
+		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
+		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
+		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
+		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
+		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
+		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->
+		<string id="HOKBOMS_xTwCq" text="" />		<!-- {=HOKBOMS_xTwCq} -->
+		<string id="HOKBOMS_OaIs1" text="" />		<!-- {=HOKBOMS_OaIs1} -->
+		<string id="HOKBOMS_xhfdH" text="" />		<!-- {=HOKBOMS_xhfdH} -->
+		<string id="HOKBOMS_rZPFr" text="" />		<!-- {=HOKBOMS_rZPFr} -->
+		<string id="HOKBOMS_eM5Cd" text="" />		<!-- {=HOKBOMS_eM5Cd} -->
+		<string id="HOKBOMS_BnvfI" text="" />		<!-- {=HOKBOMS_BnvfI} -->
 	</strings>
 </base>

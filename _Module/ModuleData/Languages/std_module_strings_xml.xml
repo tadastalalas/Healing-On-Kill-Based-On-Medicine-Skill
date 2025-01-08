@@ -4,33 +4,33 @@
 		<tag language="English" />
 	</tags>
 	<strings>
-		<string id="HOKBOMS_93u1X" text="{HERO} healed {HEAL_AMOUNT} HP. Med skill: {MED_SKILL}.\nCalculated (float): {CALC_HEAL}" />
-		<string id="HOKBOMS_1ccm4" text="Healing On Kill Based On Medicine Skill" />
-		<string id="HOKBOMS_Sa1Xq" text="Adjust settings for personal flavor" />
-		<string id="HOKBOMS_WxWoy" text="Healing on enemy killed" />
-		<string id="HOKBOMS_mfxHR" text="Enable/Disable this modification. [Default: Enabled]" />
-		<string id="HOKBOMS_qwsYu" text="Medicine skill threshold" />
-		<string id="HOKBOMS_YikUB" text="Maximum medicine skill when healing stops increasing.\nAt this skill level hero will be healed by 'Maximum healing amount' setting below. [Default: 300]" />
-		<string id="HOKBOMS_UkXap" text="Maximum healing amount" />
-		<string id="HOKBOMS_d0Tuf" text="Maximum health amount that a hero can be healed on enemy kill when his medicine skill reaches 'Medicine Skill Threshold'. [Default: 5]" />
-		<string id="HOKBOMS_ccEcT" text="" />	<!-- {=HOKBOMS_ccEcT} -->
-		<string id="HOKBOMS_WvB9h" text="" />	<!-- {=HOKBOMS_WvB9h} -->
-		<string id="HOKBOMS_9d2gl" text="" />	<!-- {=HOKBOMS_9d2gl} -->
-		<string id="HOKBOMS_DnQYP" text="" />	<!-- {=HOKBOMS_DnQYP} -->
-		<string id="HOKBOMS_RTLLF" text="" />	<!-- {=HOKBOMS_RTLLF} -->
-		<string id="HOKBOMS_Lc0vb" text="" />	<!-- {=HOKBOMS_Lc0vb} -->
-		<string id="HOKBOMS_3gKf6" text="" />	<!-- {=HOKBOMS_3gKf6} -->
-		<string id="HOKBOMS_jqX8e" text="" />	<!-- {=HOKBOMS_jqX8e} -->
-		<string id="HOKBOMS_bZ2sg" text="" />	<!-- {=HOKBOMS_bZ2sg} -->
-		<string id="HOKBOMS_73qfZ" text="" />	<!-- {=HOKBOMS_73qfZ} -->
-		<string id="HOKBOMS_QJk86" text="" />	<!-- {=HOKBOMS_QJk86} -->
-		<string id="HOKBOMS_q6hG1" text="" />	<!-- {=HOKBOMS_q6hG1} -->
-		<string id="HOKBOMS_rZdVS" text="" />	<!-- {=HOKBOMS_rZdVS} -->
-		<string id="HOKBOMS_O9bNV" text="" />	<!-- {=HOKBOMS_O9bNV} -->
-		<string id="HOKBOMS_h6J6P" text="" />	<!-- {=HOKBOMS_h6J6P} -->
-		<string id="HOKBOMS_1aRZ3" text="Moderator settings" />
-		<string id="HOKBOMS_AYLgG" text="Show detailed information" />
-		<string id="HOKBOMS_2fbFj" text="Shows which specific hero kills an enemy and how much health he heals after kill.\nAlso shows calculated floating number which is rounded to determine actual healing amount in integer number.\nFormula: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Default: Disabled]" />
+		<string id="HOKBOMS_93u1X" text="{HERO} knocked down {AFFECTED_AGENT}. Recovered {HEAL_AMOUNT} HP." />
+		<string id="HOKBOMS_1ccm4" text="{HERO} killed {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nMedicine skill: {MED_SKILL}. Float: {CALC_HEAL}" />
+		<string id="HOKBOMS_Sa1Xq" text="{HERO} got Medicine skill experience: {MED_EXP} ({EXP_PERC} %)\nExperience needed in total: {MED_EXP_NEED}\nMedicine skill: {MED_SKILL}" />
+		<string id="HOKBOMS_WxWoy" text="Healing On Kill Based On Medicine Skill" />
+		<string id="HOKBOMS_mfxHR" text="Main modification settings" />
+		<string id="HOKBOMS_qwsYu" text="Healing on enemy killed" />
+		<string id="HOKBOMS_YikUB" text="Enable/Disable this modification. [Default: Enabled]" />
+		<string id="HOKBOMS_UkXap" text="Medicine skill threshold" />
+		<string id="HOKBOMS_d0Tuf" text="Maximum medicine skill when healing stops increasing.\nAt this skill level hero will be healed by 'Maximum healing amount' setting below. [Default: 300]" />
+		<string id="HOKBOMS_ccEcT" text="Maximum healing amount" />
+		<string id="HOKBOMS_WvB9h" text="Maximum health amount that a hero can be healed on enemy kill when his medicine skill reaches 'Medicine skill threshold'. [Default: 10]" />
+		<string id="HOKBOMS_9d2gl" text="Show hero vs hero on-screen notification" />
+		<string id="HOKBOMS_DnQYP" text="Shows on-screen notification when any hero koncks down another hero. [Default: Enabled]" />
+		<string id="HOKBOMS_RTLLF" text="Medicine skill progression adjustments" />
+		<string id="HOKBOMS_Lc0vb" text="Earn medicine experience when healing" />
+		<string id="HOKBOMS_3gKf6" text="Every alive hero in the game gets medicine skill experience when hero is healing from wounds after battle. [Default: Enabled]" />
+		<string id="HOKBOMS_jqX8e" text="Use learning rate modifier" />
+		<string id="HOKBOMS_bZ2sg" text="Calculated experience will go through learning rate modifier as intended by the game. If disabled, heroes will get raw calculated experience as it is (as if learning rate is x1). [Default: Disabled]" />
+		<string id="HOKBOMS_73qfZ" text="Experience percentage divisor" />
+		<string id="HOKBOMS_QJk86" text="(Medicine skill threshold / Current hero's medicine skill) / Experience percentage divisor = Percentage to earn experience for hero's medicine skill. [Default: 200]" />
+		<string id="HOKBOMS_q6hG1" text="Debug settings" />
+		<string id="HOKBOMS_rZdVS" text="Show healing information" />
+		<string id="HOKBOMS_O9bNV" text="Shows which specific hero kills an enemy and how much health he heals after kill.\nAlso shows calculated floating number which is rounded to determine actual healing amount in integer number.\nFormula: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Default: Disabled]" />
+		<string id="HOKBOMS_h6J6P" text="Show medicine experience information" />
+		<string id="HOKBOMS_1aRZ3" text="Shows detailed information of all heroes in the log, who gets medicine skill experience every hour. [Default: Disabled]" />
+		<string id="HOKBOMS_AYLgG" text="" />	<!-- {=HOKBOMS_AYLgG} -->
+		<string id="HOKBOMS_2fbFj" text="" />	<!-- {=HOKBOMS_2fbFj} -->
 		<string id="HOKBOMS_5MPXR" text="" />	<!-- {=HOKBOMS_5MPXR} -->
 		<string id="HOKBOMS_q46Oj" text="" />	<!-- {=HOKBOMS_q46Oj} -->
 		<string id="HOKBOMS_2DtDS" text="" />	<!-- {=HOKBOMS_2DtDS} -->

@@ -95,18 +95,29 @@ namespace HealingOnKillBasedOnMedicineSkill
                         agent.Health = agent.HealthLimit;
 
                     if (settings.ShowDetailedInformation)
-                        DisplayDetailedInformationMessage(agent, amountToHeal, currentMedSkill, calculatedNumber);
+                        DisplayDetailedInformationMessage(agent, amountToHeal, currentMedSkill, calculatedNumber, affectedAgent);
+
+                    if (settings.ShowWhenHeroKillsAnotherHero && affectedAgent.IsHero)
+                    {
+                        var message = new TextObject("{=HOKBOMS_93u1X}{HERO} knocked down {AFFECTED_AGENT}. Recovered {HEAL_AMOUNT} HP.")
+                            .SetTextVariable("HERO", agent.Name)
+                            .SetTextVariable("AFFECTED_AGENT", affectedAgent.Name)
+                            .SetTextVariable("HEAL_AMOUNT", amountToHeal);
+
+                        MBInformationManager.AddQuickInformation(new TextObject(message.ToString()), 2000, null, "event:/ui/notification/levelup");
+                    }
                 }
             }
         }
 
-        private void DisplayDetailedInformationMessage(Agent agent, int amountToHeal, float currentMedSkill, float calculatedNumber)
+        private void DisplayDetailedInformationMessage(Agent agent, int amountToHeal, float currentMedSkill, float calculatedNumber, Agent affectedAgent)
         {
-            var message = new TextObject("{=HOKBOMS_93u1X}{HERO} + {HEAL_AMOUNT} HP. Med: {MED_SKILL}. Float: {CALC_HEAL}")
-                    .SetTextVariable("HERO", agent.Name)
-                    .SetTextVariable("HEAL_AMOUNT", amountToHeal)
-                    .SetTextVariable("MED_SKILL", currentMedSkill)
-                    .SetTextVariable("CALC_HEAL", calculatedNumber.ToString("F2"));
+            var message = new TextObject("{=HOKBOMS_1ccm4}{HERO} killed {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nMedicine skill: {MED_SKILL}. Float: {CALC_HEAL}")
+                .SetTextVariable("HERO", agent.Name)
+                .SetTextVariable("AFFECTED_AGENT", affectedAgent.Name)
+                .SetTextVariable("HEAL_AMOUNT", amountToHeal)
+                .SetTextVariable("MED_SKILL", currentMedSkill)
+                .SetTextVariable("CALC_HEAL", calculatedNumber.ToString("F2"));
             InformationManager.DisplayMessage(new InformationMessage(message.ToString(), Colors.Red));
         }
 

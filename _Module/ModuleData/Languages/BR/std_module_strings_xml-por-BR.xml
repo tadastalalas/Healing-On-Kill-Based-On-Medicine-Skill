@@ -4,33 +4,33 @@
 		<tag language="Português (BR)" />
 	</tags>
 	<strings>
-		<string id="HOKBOMS_93u1X" text="{HERO} curou {HEAL_AMOUNT} HP. Habilidade média: {MED_SKILL}.\nCalculado (flutuante): {CALC_HEAL}" />
-		<string id="HOKBOMS_1ccm4" text="Cura ao matar com base na habilidade de medicina" />
-		<string id="HOKBOMS_Sa1Xq" text="Ajuste as configurações de acordo com seu gosto pessoal" />
-		<string id="HOKBOMS_WxWoy" text="Cura em inimigo morto" />
-		<string id="HOKBOMS_mfxHR" text="Habilitar/Desabilitar esta modificação. [Padrão: Habilitado]" />
-		<string id="HOKBOMS_qwsYu" text="Limiar de habilidade médica" />
-		<string id="HOKBOMS_YikUB" text="Habilidade máxima de medicina quando a cura para de aumentar.\nNeste nível de habilidade, o herói será curado pela configuração 'Quantidade máxima de cura' abaixo. [Padrão: 300]" />
-		<string id="HOKBOMS_UkXap" text="Quantidade máxima de cura" />
-		<string id="HOKBOMS_d0Tuf" text="Quantidade máxima de saúde que um herói pode ser curado ao matar um inimigo quando sua habilidade de medicina atinge 'Limite de Habilidade de Medicina'. [Padrão: 8]" />
-		<string id="HOKBOMS_ccEcT" text="" />		<!-- {=HOKBOMS_ccEcT} -->
-		<string id="HOKBOMS_WvB9h" text="" />		<!-- {=HOKBOMS_WvB9h} -->
-		<string id="HOKBOMS_9d2gl" text="" />		<!-- {=HOKBOMS_9d2gl} -->
-		<string id="HOKBOMS_DnQYP" text="" />		<!-- {=HOKBOMS_DnQYP} -->
-		<string id="HOKBOMS_RTLLF" text="" />		<!-- {=HOKBOMS_RTLLF} -->
-		<string id="HOKBOMS_Lc0vb" text="" />		<!-- {=HOKBOMS_Lc0vb} -->
-		<string id="HOKBOMS_3gKf6" text="" />		<!-- {=HOKBOMS_3gKf6} -->
-		<string id="HOKBOMS_jqX8e" text="" />		<!-- {=HOKBOMS_jqX8e} -->
-		<string id="HOKBOMS_bZ2sg" text="" />		<!-- {=HOKBOMS_bZ2sg} -->
-		<string id="HOKBOMS_73qfZ" text="" />		<!-- {=HOKBOMS_73qfZ} -->
-		<string id="HOKBOMS_QJk86" text="" />		<!-- {=HOKBOMS_QJk86} -->
-		<string id="HOKBOMS_q6hG1" text="" />		<!-- {=HOKBOMS_q6hG1} -->
-		<string id="HOKBOMS_rZdVS" text="" />		<!-- {=HOKBOMS_rZdVS} -->
-		<string id="HOKBOMS_O9bNV" text="" />		<!-- {=HOKBOMS_O9bNV} -->
-		<string id="HOKBOMS_h6J6P" text="" />		<!-- {=HOKBOMS_h6J6P} -->
-		<string id="HOKBOMS_1aRZ3" text="Configurações do moderador" />
-		<string id="HOKBOMS_AYLgG" text="Mostrar informações detalhadas" />
-		<string id="HOKBOMS_2fbFj" text="Mostra qual herói específico mata um inimigo e quanta saúde ele cura após a morte.\nTambém mostra um número flutuante calculado que é arredondado para determinar a quantidade real de cura em número inteiro.\nFórmula: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Padrão: Desativado]" />
+		<string id="HOKBOMS_93u1X" text="{HERO} derrubou {AFFECTED_AGENT}. Recuperou {HEAL_AMOUNT} HP." />
+		<string id="HOKBOMS_1ccm4" text="{HERO} matou {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nHabilidade em medicina: {MED_SKILL}. Flutuação: {CALC_HEAL}" />
+		<string id="HOKBOMS_Sa1Xq" text="{HERO} obteve experiência em perícia em Medicina: {MED_EXP} ({EXP_PERC} %)\nExperiência necessária no total: {MED_EXP_NEED}\nHabilidade em Medicina: {MED_SKILL}" />
+		<string id="HOKBOMS_WxWoy" text="Cura ao matar com base na habilidade de medicina" />
+		<string id="HOKBOMS_mfxHR" text="Configurações principais de modificação" />
+		<string id="HOKBOMS_qwsYu" text="Cura em inimigo morto" />
+		<string id="HOKBOMS_YikUB" text="Habilitar/Desabilitar esta modificação. [Padrão: Habilitado]" />
+		<string id="HOKBOMS_UkXap" text="Limiar de habilidade médica" />
+		<string id="HOKBOMS_d0Tuf" text="Habilidade máxima de medicina quando a cura para de aumentar.\nNeste nível de habilidade, o herói será curado pela configuração 'Quantidade máxima de cura' abaixo. [Padrão: 300]" />
+		<string id="HOKBOMS_ccEcT" text="Quantidade máxima de cura" />
+		<string id="HOKBOMS_WvB9h" text="Quantidade máxima de saúde que um herói pode ser curado ao matar um inimigo quando sua habilidade de medicina atinge o 'Limite de habilidade de medicina'. [Padrão: 10]" />
+		<string id="HOKBOMS_9d2gl" text="Mostrar notificação de herói vs herói na tela" />
+		<string id="HOKBOMS_DnQYP" text="Mostra uma notificação na tela quando qualquer herói derruba outro herói. [Padrão: Habilitado]" />
+		<string id="HOKBOMS_RTLLF" text="Ajustes na progressão de habilidades médicas" />
+		<string id="HOKBOMS_Lc0vb" text="Ganhe experiência em medicina ao curar" />
+		<string id="HOKBOMS_3gKf6" text="Todo herói vivo no jogo ganha experiência em habilidade de medicina quando o herói está se curando de ferimentos após a batalha. [Padrão: Habilitado]" />
+		<string id="HOKBOMS_jqX8e" text="Use modificador de taxa de aprendizagem" />
+		<string id="HOKBOMS_bZ2sg" text="A experiência calculada passará pelo modificador de taxa de aprendizado conforme pretendido pelo jogo. Se desabilitado, os heróis receberão experiência calculada bruta como ela é (como se a taxa de aprendizado fosse x1). [Padrão: Desativado]" />
+		<string id="HOKBOMS_73qfZ" text="Experiência em divisor de porcentagem" />
+		<string id="HOKBOMS_QJk86" text="(Limite de perícia em medicina / Perícia em medicina do herói atual) / Divisor de porcentagem de experiência = Porcentagem para ganhar experiência para a perícia em medicina do herói. [Padrão: 200]" />
+		<string id="HOKBOMS_q6hG1" text="Configurações de depuração" />
+		<string id="HOKBOMS_rZdVS" text="Mostrar informações de cura" />
+		<string id="HOKBOMS_O9bNV" text="Mostra qual herói específico mata um inimigo e quanta saúde ele cura após a morte.\nTambém mostra um número flutuante calculado que é arredondado para determinar a quantidade real de cura em número inteiro.\nFórmula: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Padrão: Desativado]" />
+		<string id="HOKBOMS_h6J6P" text="Mostrar informações sobre experiência médica" />
+		<string id="HOKBOMS_1aRZ3" text="Mostra informações detalhadas de todos os heróis no registro, que ganham experiência de habilidade médica a cada hora. [Padrão: Desativado]" />
+		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
+		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
 		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
 		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
 		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->

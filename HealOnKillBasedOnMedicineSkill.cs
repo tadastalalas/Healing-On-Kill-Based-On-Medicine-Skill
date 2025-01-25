@@ -67,7 +67,7 @@ namespace HealingOnKillBasedOnMedicineSkill
         {
             base.OnAgentRemoved(affectedAgent, affectorAgent, agentState, blow);
 
-            if (!settings.EnableHealingOnEnemyKill && !affectorAgent.IsHero)
+            if (!settings.EnableHealingOnEnemyKill || !affectorAgent.IsHero)
                 return;
 
             if (affectedAgent == null || affectorAgent == null || affectedAgent == affectorAgent)

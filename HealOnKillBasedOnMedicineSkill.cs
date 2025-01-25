@@ -88,7 +88,10 @@ namespace HealingOnKillBasedOnMedicineSkill
                     int amountToHeal = TaleWorlds.Library.MathF.Round(calculatedNumber);
 
                     if (affectedAgent.IsHero)
+                    {
+                        this.PopulateAllAgentsInMissionList();
                         amountToHeal *= 2;
+                    }
 
                     agent.Health += amountToHeal;
                     if (agent.Health > agent.HealthLimit)

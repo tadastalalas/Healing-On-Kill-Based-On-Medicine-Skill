@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Zeigt an, welcher bestimmte Held einen Gegner tötet und wie viel Gesundheit er nach dem Kill heilt.\nZeigt auch eine berechnete Gleitkommazahl an, die gerundet wird, um die tatsächliche Heilungsmenge in einer Ganzzahl zu bestimmen.\nFormel: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Standard: Deaktiviert]" />
 		<string id="HOKBOMS_h6J6P" text="Informationen zur medizinischen Erfahrung anzeigen" />
 		<string id="HOKBOMS_1aRZ3" text="Zeigt detaillierte Informationen zu allen Helden im Protokoll an, die stündlich Erfahrung in der Heilkunde sammeln. [Standard: Deaktiviert]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Mindestheilung von 1 Gesundheit" />
+		<string id="HOKBOMS_2fbFj" text="Mindestheilung von 1 Gesundheit, selbst wenn der Held zu geringe Heilfertigkeiten hat. [Standard: Aktiviert]" />
+		<string id="HOKBOMS_5MPXR" text="Heilungsmultiplikator des Haupthelden" />
+		<string id="HOKBOMS_q46Oj" text="Die Heilung des Haupthelden wird mit dieser Zahl multipliziert. Sie multipliziert die berechnete Gleitkommazahl, ist aber noch nicht gerundet. Wenn also die Heilfertigkeit niedrig ist, ist die Steigerung der Heilung nicht wesentlich. Überschreibt den Schieberegler [Maximale Heilungsmenge] oben. [Standard: 1]" />
+		<string id="HOKBOMS_2DtDS" text="Heilungsmultiplikator für NPC-Helden" />
+		<string id="HOKBOMS_hoh62" text="Die Heilung von NPC-Helden wird mit dieser Zahl multipliziert. Sie multipliziert die berechnete Gleitkommazahl, ist aber noch nicht gerundet. Wenn also die Medizinfertigkeit niedrig ist, ist die Steigerung der Heilung nicht wesentlich. Überschreibt den Schieberegler [Maximale Heilungsmenge] oben. [Standard: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

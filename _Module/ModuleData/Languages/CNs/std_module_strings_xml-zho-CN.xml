@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO} 击倒了 {AFFECTED_AGENT}。恢复了 {HEAL_AMOUNT} 点生命值。" />
-		<string id="HOKBOMS_1ccm4" text="{HERO} 杀死了 {AFFECTED_AGENT}。+ {HEAL_AMOUNT} HP。\n医疗技能：{MED_SKILL}。浮动：{CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} 击倒了 {AFFECTED_AGENT}。+ {HEAL_AMOUNT} HP。\n医疗技能：{MED_SKILL}。浮动：{CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} 获得医药技能经验：{MED_EXP} ({EXP_PERC} %)\n总共需要经验：{MED_EXP_NEED}\n医药技能：{MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="根据医疗技能杀敌后治疗" />
 		<string id="HOKBOMS_mfxHR" text="主要修改设置" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="显示哪个特定英雄杀死了敌人以及杀死后恢复了多少生命值。\n还显示计算出的浮点数，该浮点数四舍五入以确定整数的实际治疗量。\n公式：currentMedSkill /（maxMedSkillThreshold / maxHPToHeal）。[默认：禁用]" />
 		<string id="HOKBOMS_h6J6P" text="显示用药经验信息" />
 		<string id="HOKBOMS_1aRZ3" text="显示日志中所有英雄的详细信息，每个小时获得一次医疗技能经验。[默认：禁用]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="至少恢复 1 点生命值" />
+		<string id="HOKBOMS_2fbFj" text="即使英雄的医疗技能太低，也能至少治愈 1 点生命值。[默认：启用]" />
+		<string id="HOKBOMS_5MPXR" text="主角治疗倍数" />
+		<string id="HOKBOMS_q46Oj" text="主角的治疗量将乘以该数字。它乘以计算出的浮点数，但尚未四舍五入，因此当医疗技能较低时，治疗量增加将不大。覆盖上面的[最大治疗量]滑块。[默认值：1]" />	
+		<string id="HOKBOMS_2DtDS" text="NPC英雄的治疗倍数" />	
+		<string id="HOKBOMS_hoh62" text="NPC 英雄的治疗量将乘以该数字。它乘以计算出的浮点数，但尚未四舍五入，因此当医疗技能较低时，治疗量增加将不大。覆盖上面的 [最大治疗量] 滑块。[默认值：2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

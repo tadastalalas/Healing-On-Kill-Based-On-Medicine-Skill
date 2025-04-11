@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO} derribó a {AFFECTED_AGENT}. Recuperó {HEAL_AMOUNT} HP." />
-		<string id="HOKBOMS_1ccm4" text="{HERO} mató a {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nHabilidad de medicina: {MED_SKILL}. Flotación: {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} derribó a {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nHabilidad de medicina: {MED_SKILL}. Flotación: {CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} obtuvo experiencia en la habilidad Medicina: {MED_EXP} ({EXP_PERC} %)\nExperiencia necesaria en total: {MED_EXP_NEED}\nHabilidad Medicina: {MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="Curación al matar según la habilidad de medicina" />
 		<string id="HOKBOMS_mfxHR" text="Configuración de modificación principal" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Muestra qué héroe específico mata a un enemigo y cuánta salud recupera después de matarlo.\nTambién muestra un número flotante calculado que se redondea para determinar la cantidad de curación real en un número entero.\nFórmula: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Predeterminado: Deshabilitado]" />
 		<string id="HOKBOMS_h6J6P" text="Mostrar información sobre la experiencia en medicina" />
 		<string id="HOKBOMS_1aRZ3" text="Muestra información detallada de todos los héroes en el registro, quién obtiene experiencia en la habilidad de medicina cada hora. [Predeterminado: Deshabilitado]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Curación mínima de 1 salud" />
+		<string id="HOKBOMS_2fbFj" text="Curación mínima de 1 punto de salud incluso si el héroe tiene una habilidad de medicina demasiado baja. [Predeterminado: Habilitado]" />
+		<string id="HOKBOMS_5MPXR" text="Multiplicador de curación del héroe principal" />
+		<string id="HOKBOMS_q46Oj" text="La curación del héroe principal se multiplicará por este número. Multiplica el número flotante calculado, aunque aún no se haya redondeado, por lo que cuando la habilidad de medicina es baja, el aumento de la curación no será sustancial. Anula el control deslizante [Cantidad máxima de curación] que se encuentra arriba. [Predeterminado: 1]" />
+		<string id="HOKBOMS_2DtDS" text="Multiplicador de curación de los héroes NPC" />
+		<string id="HOKBOMS_hoh62" text="La curación de los héroes NPC se multiplicará por este número. Multiplica el número flotante calculado mientras aún no se redondea, por lo que cuando la habilidad de medicina es baja, el aumento de la curación no será sustancial. Anula el control deslizante [Cantidad máxima de curación] que se encuentra arriba. [Predeterminado: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

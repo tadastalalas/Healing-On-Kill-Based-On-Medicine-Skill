@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO} powalił {AFFECTED_AGENT}. Odzyskał {HEAL_AMOUNT} HP." />
-		<string id="HOKBOMS_1ccm4" text="{HERO} zabił {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nUmiejętność medycyny: {MED_SKILL}. Liczba zmiennoprzecinkowa: {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} powalił {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nUmiejętność medycyny: {MED_SKILL}. Liczba zmiennoprzecinkowa: {CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} zdobył doświadczenie w umiejętnościach medycznych: {MED_EXP} ({EXP_PERC} %)\nŁączna wymagana ilość doświadczenia: {MED_EXP_NEED}\nUmiejętności medyczne: {MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="Leczenie po zabiciu w oparciu o umiejętność medycyny" />
 		<string id="HOKBOMS_mfxHR" text="Główne ustawienia modyfikacji" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Pokazuje, który konkretny bohater zabija wroga i ile zdrowia odzyskuje po zabiciu.\nPokazuje również obliczoną liczbę zmiennoprzecinkową, która jest zaokrąglana w celu określenia faktycznej ilości leczenia w liczbie całkowitej.\nWzór: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Domyślnie: Wyłączone]" />
 		<string id="HOKBOMS_h6J6P" text="Pokaż informacje o doświadczeniu medycznym" />
 		<string id="HOKBOMS_1aRZ3" text="Pokazuje szczegółowe informacje o wszystkich bohaterach w dzienniku, którzy otrzymują doświadczenie umiejętności medycznych co godzinę. [Domyślnie: Wyłączone]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Minimalne leczenie 1 pkt. zdrowia" />
+		<string id="HOKBOMS_2fbFj" text="Minimalne leczenie wynoszące 1 punkt zdrowia, nawet jeśli bohater ma zbyt niską umiejętność medycyny. [Domyślnie: Włączone]" />
+		<string id="HOKBOMS_5MPXR" text="Mnożnik leczenia głównego bohatera" />
+		<string id="HOKBOMS_q46Oj" text="Leczenie głównego bohatera zostanie pomnożone przez tę liczbę. Mnoży ona obliczoną liczbę zmiennoprzecinkową, gdy nie jest jeszcze zaokrąglona, ​​więc gdy umiejętność medycyny jest niska, wzrost leczenia nie będzie znaczący. Nadpisuje suwak [Maksymalna ilość leczenia] powyżej. [Domyślnie: 1]" />
+		<string id="HOKBOMS_2DtDS" text="Mnożnik leczenia bohaterów NPC" />
+		<string id="HOKBOMS_hoh62" text="Leczenie bohaterów NPC zostanie pomnożone przez tę liczbę. Mnoży ona obliczoną liczbę zmiennoprzecinkową, gdy nie jest jeszcze zaokrąglona, ​​więc gdy umiejętność medycyny jest niska, wzrost leczenia nie będzie znaczący. Nadpisuje suwak [Maksymalna ilość leczenia] powyżej. [Domyślnie: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

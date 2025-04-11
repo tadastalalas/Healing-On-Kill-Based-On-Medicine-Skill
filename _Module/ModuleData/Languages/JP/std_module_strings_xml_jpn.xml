@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="どのヒーローが敵を倒したか、また倒した後にどれだけ体力が回復するかを表示します。\nまた、実際の回復量を整数で決定するために四捨五入された計算された浮動小数点数も表示します。\n式: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal)。[デフォルト: 無効]" />
 		<string id="HOKBOMS_h6J6P" text="医療経験情報を表示" />
 		<string id="HOKBOMS_1aRZ3" text="ログに、1 時間ごとに医療スキル経験値を獲得するすべてのヒーローの詳細情報を表示します。[デフォルト: 無効]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="最低1の体力回復" />
+		<string id="HOKBOMS_2fbFj" text="ヒーローの医療スキルが低すぎる場合でも、最低限 1 の体力を回復します。[デフォルト: 有効]" />
+		<string id="HOKBOMS_5MPXR" text="主人公の回復力倍率" />
+		<string id="HOKBOMS_q46Oj" text="メインヒーローの回復量はこの数値で乗算されます。計算された浮動小数点数を乗算しますが、まだ四捨五入されていないため、医療スキルが低い場合は回復量の増加は大きくありません。上記の[最大回復量]スライダーを上書きします。[デフォルト: 1]" />
+		<string id="HOKBOMS_2DtDS" text="NPCヒーローの回復力乗数" />
+		<string id="HOKBOMS_hoh62" text="NPC ヒーローの回復量はこの数値で乗算されます。計算された浮動小数点数を乗算しますが、まだ四捨五入されていないため、医療スキルが低い場合は回復量の増加は大きくありません。上記の [最大回復量] スライダーを上書きします。[デフォルト: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

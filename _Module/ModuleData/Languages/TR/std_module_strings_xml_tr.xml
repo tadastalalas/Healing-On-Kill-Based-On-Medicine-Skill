@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO}, {AFFECTED_AGENT} adlı kişiyi yere serdi. {HEAL_AMOUNT} HP kurtarıldı." />
-		<string id="HOKBOMS_1ccm4" text="{HERO}, {AFFECTED_AGENT} adlı kişiyi öldürdü. + {HEAL_AMOUNT} HP.\nTıp becerisi: {MED_SKILL}. Float: {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO}, {AFFECTED_AGENT} adlı kişiyi yere serdi. + {HEAL_AMOUNT} HP.\nTıp becerisi: {MED_SKILL}. Float: {CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} Tıp becerisi deneyimi kazandı: {MED_EXP} ({EXP_PERC} %)\nToplamda gereken deneyim: {MED_EXP_NEED}\nTıp becerisi: {MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="Tıp Becerisine Dayalı Öldürme Üzerine İyileşme" />
 		<string id="HOKBOMS_mfxHR" text="Ana değişiklik ayarları" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Hangi belirli kahramanın bir düşmanı öldürdüğünü ve öldürdükten sonra ne kadar can iyileştirdiğini gösterir.\nAyrıca, tam sayı cinsinden gerçek iyileştirme miktarını belirlemek için yuvarlanan hesaplanmış yüzen sayıyı gösterir.\nFormül: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Varsayılan: Devre Dışı]" />
 		<string id="HOKBOMS_h6J6P" text="Tıp deneyimi bilgilerini göster" />
 		<string id="HOKBOMS_1aRZ3" text="Günlükte her saat ilaç becerisi deneyimi kazanan tüm kahramanların ayrıntılı bilgilerini gösterir. [Varsayılan: Devre Dışı]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Minimum 1 sağlık iyileştirmesi" />
+		<string id="HOKBOMS_2fbFj" text="Kahramanın ilaç becerisi çok düşük olsa bile en az 1 can iyileştirmesi. [Varsayılan: Etkin]" />
+		<string id="HOKBOMS_5MPXR" text="Ana kahramanın iyileştirme çarpanı" />
+		<string id="HOKBOMS_q46Oj" text="Ana kahramanın iyileştirmesi bu sayı ile çarpılacaktır. Henüz yuvarlanmamışken hesaplanan yüzen sayıyı çarpar, bu nedenle tıp becerisi düşük olduğunda iyileştirmedeki artış önemli olmayacaktır. Yukarıdaki [Maksimum iyileştirme miktarı] kaydırıcısını geçersiz kılar. [Varsayılan: 1]" />
+		<string id="HOKBOMS_2DtDS" text="NPC kahramanlarının iyileştirme çarpanı" />
+		<string id="HOKBOMS_hoh62" text="NPC kahramanlarının iyileştirmesi bu sayı ile çarpılacaktır. Henüz yuvarlanmamışken hesaplanan yüzen sayıyı çarpar, bu nedenle tıp becerisi düşük olduğunda iyileştirmedeki artış önemli olmayacaktır. Yukarıdaki [Maksimum iyileştirme miktarı] kaydırıcısını geçersiz kılar. [Varsayılan: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

@@ -23,17 +23,29 @@ namespace HealingOnKillBasedOnMedicineSkill
         [SettingPropertyGroup("{=HOKBOMS_mfxHR}Main modification settings", GroupOrder = 0)]
         public bool EnableHealingOnEnemyKill { get; set; } = true;
 
-        [SettingPropertyInteger("{=HOKBOMS_UkXap}Medicine skill threshold", 50, 600, "0", Order = 1, RequireRestart = false, HintText = "{=HOKBOMS_d0Tuf}Maximum medicine skill when healing stops increasing.\nAt this skill level hero will be healed by 'Maximum healing amount' setting below. [Default: 300]")]
+        [SettingPropertyBool("{=HOKBOMS_AYLgG}Minimum healing of 1 health", Order = 1, RequireRestart = false, HintText = "{=HOKBOMS_2fbFj}Minimum healing of 1 health even if hero has too low medicine skill. [Default: Enabled]")]
+        [SettingPropertyGroup("{=HOKBOMS_mfxHR}Main modification settings", GroupOrder = 0)]
+        public bool EnableMinimumHealingOfOneHealth { get; set; } = true;
+
+        [SettingPropertyInteger("{=HOKBOMS_UkXap}Medicine skill threshold", 50, 600, "0", Order = 2, RequireRestart = false, HintText = "{=HOKBOMS_d0Tuf}Maximum medicine skill when healing stops increasing.\nAt this skill level hero will be healed by 'Maximum healing amount' setting below. [Default: 300]")]
         [SettingPropertyGroup("{=HOKBOMS_mfxHR}Main modification settings", GroupOrder = 0)]
         public int MaxMedSkillThreshold { get; set; } = 300;
 
-        [SettingPropertyInteger("{=HOKBOMS_ccEcT}Maximum healing amount", 1, 20, "0", Order = 2, RequireRestart = false, HintText = "{=HOKBOMS_WvB9h}Maximum health amount that a hero can be healed on enemy kill when his medicine skill reaches 'Medicine skill threshold'. [Default: 10]")]
+        [SettingPropertyInteger("{=HOKBOMS_ccEcT}Maximum healing amount", 1, 20, "0", Order = 3, RequireRestart = false, HintText = "{=HOKBOMS_WvB9h}Maximum health amount that a hero can be healed on enemy kill when his medicine skill reaches 'Medicine skill threshold'. [Default: 10]")]
         [SettingPropertyGroup("{=HOKBOMS_mfxHR}Main modification settings", GroupOrder = 0)]
         public int MaxHPToHeal { get; set; } = 10;
 
-        [SettingPropertyBool("{=HOKBOMS_9d2gl}Show hero vs hero on-screen notification", Order = 3, RequireRestart = false, HintText = "{=HOKBOMS_DnQYP}Shows on-screen notification when any hero koncks down another hero. [Default: Enabled]")]
+        [SettingPropertyBool("{=HOKBOMS_9d2gl}Show hero vs hero on-screen notification", Order = 4, RequireRestart = false, HintText = "{=HOKBOMS_DnQYP}Shows on-screen notification when any hero koncks down another hero. [Default: Enabled]")]
         [SettingPropertyGroup("{=HOKBOMS_mfxHR}Main modification settings", GroupOrder = 0)]
         public bool ShowWhenHeroKillsAnotherHero { get; set; } = true;
+
+        [SettingPropertyInteger("{=HOKBOMS_5MPXR}Main heroe's healing multiplier", 1, 20, "0", Order = 5, RequireRestart = false, HintText = "{=HOKBOMS_q46Oj}Main heroe's healing will be multiplied by this number. It multiplies calculated floating number while it is not rounded yet so when medicine skill is low the increase in healing will be not substantial. Overrides [Maximum healing amount] slider above. [Default: 1]")]
+        [SettingPropertyGroup("{=HOKBOMS_mfxHR}Main modification settings", GroupOrder = 0)]
+        public int MainHeroeHealingMultiplier { get; set; } = 1;
+
+        [SettingPropertyInteger("{=HOKBOMS_2DtDS}NPC heroes's healing multiplier", 1, 20, "0", Order = 6, RequireRestart = false, HintText = "{=HOKBOMS_hoh62}NPC heroes's healing will be multiplied by this number. It multiplies calculated floating number while it is not rounded yet so when medicine skill is low the increase in healing will be not substantial. Overrides [Maximum healing amount] slider above. [Default: 2]")]
+        [SettingPropertyGroup("{=HOKBOMS_mfxHR}Main modification settings", GroupOrder = 0)]
+        public int NPCHeroesHealingMultiplier { get; set; } = 2;
 
         [SettingPropertyBool("{=HOKBOMS_Lc0vb}Earn medicine experience when healing", Order = 0, RequireRestart = false, HintText = "{=HOKBOMS_3gKf6}Every alive hero in the game gets medicine skill experience when hero is healing from wounds after battle. [Default: Enabled]")]
         [SettingPropertyGroup("{=HOKBOMS_RTLLF}Medicine skill progression adjustments", GroupOrder = 1)]

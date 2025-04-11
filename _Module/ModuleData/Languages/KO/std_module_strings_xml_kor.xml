@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="어떤 특정 영웅이 적을 죽였는지와 죽인 후 얼마나 많은 체력을 회복했는지 보여줍니다.\n또한 정수로 된 실제 치유량을 결정하기 위해 반올림된 계산된 부동 소수점 수를 보여줍니다.\n수식: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [기본값: 비활성화]" />
 		<string id="HOKBOMS_h6J6P" text="의학 경험 정보 보기" />
 		<string id="HOKBOMS_1aRZ3" text="매 시간 의학 기술 경험치를 얻는 모든 영웅의 자세한 정보를 로그에 표시합니다. [기본값: 비활성화]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="최소 1 체력 회복" />
+		<string id="HOKBOMS_2fbFj" text="영웅의 의학 기술이 너무 낮더라도 최소 1의 체력을 회복합니다. [기본값: 활성화]" />
+		<string id="HOKBOMS_5MPXR" text="주인공의 치유 배수" />
+		<string id="HOKBOMS_q46Oj" text="주인공의 치유량은 이 숫자만큼 곱해집니다. 계산된 부동 소수점 수를 곱하지만 아직 반올림하지 않았기 때문에 의학 기술이 낮을 때 치유량 증가는 크지 않습니다. 위의 [최대 치유량] 슬라이더를 무시합니다. [기본값: 1]" />
+		<string id="HOKBOMS_2DtDS" text="NPC 영웅의 치유 배수" />
+		<string id="HOKBOMS_hoh62" text="NPC 영웅의 치유량은 이 숫자만큼 곱해집니다. 계산된 부동 소수점 수를 곱하지만 아직 반올림하지 않았기 때문에 의학 기술이 낮을 때 치유량 증가는 크지 않습니다. 위의 [최대 치유량] 슬라이더를 무시합니다. [기본값: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

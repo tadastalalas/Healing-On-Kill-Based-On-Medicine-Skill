@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO} сбил с ног {AFFECTED_AGENT}. Восстановил {HEAL_AMOUNT} HP." />
-		<string id="HOKBOMS_1ccm4" text="{HERO} убил {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nНавык медицины: {MED_SKILL}. Плавающий: {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} сбил с ног {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nНавык медицины: {MED_SKILL}. Плавающий: {CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} получил опыт навыка медицины: {MED_EXP} ({EXP_PERC} %)\nВсего необходимо опыта: {MED_EXP_NEED}\nНавык медицины: {MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="Исцеление при убийстве на основе медицинских навыков" />
 		<string id="HOKBOMS_mfxHR" text="Основные настройки модификации" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Показывает, какой именно герой убивает врага и сколько здоровья он восстанавливает после убийства.\nТакже показывает расчетное плавающее число, которое округляется для определения фактического количества исцеления в виде целого числа.\nФормула: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [По умолчанию: отключено]" />
 		<string id="HOKBOMS_h6J6P" text="Показать информацию о медицинском опыте" />
 		<string id="HOKBOMS_1aRZ3" text="Показывает подробную информацию обо всех героях в журнале, которые получают опыт медицинских навыков каждый час. [По умолчанию: отключено]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Минимальное исцеление 1 единицы здоровья" />
+		<string id="HOKBOMS_2fbFj" text="Минимальное исцеление 1 единицы здоровья, даже если у героя слишком низкий навык медицины. [По умолчанию: включено]" />
+		<string id="HOKBOMS_5MPXR" text="Множитель исцеления главного героя" />
+		<string id="HOKBOMS_q46Oj" text="Исцеление главного героя будет умножено на это число. Оно умножает рассчитанное плавающее число, пока оно не округлено, поэтому при низком навыке медицины увеличение исцеления будет незначительным. Переопределяет ползунок [Максимальное количество исцеления] выше. [По умолчанию: 1]" />
+		<string id="HOKBOMS_2DtDS" text="Множитель исцеления героев NPC" />
+		<string id="HOKBOMS_hoh62" text="Исцеление героев NPC будет умножено на это число. Оно умножает рассчитанное плавающее число, пока оно не округлено, поэтому при низком навыке медицины увеличение исцеления будет незначительным. Переопределяет ползунок [Максимальное количество исцеления] выше. [По умолчанию: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

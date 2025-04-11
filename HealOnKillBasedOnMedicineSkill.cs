@@ -31,19 +31,19 @@ namespace HealingOnKillBasedOnMedicineSkill
 
         private void InitializeOnce()
         {
-            if (!this.isInitialized) {
-                this.PopulateAllAgentsInMissionList();
-                this.isInitialized = true;
+            if (!isInitialized) {
+                PopulateAllAgentsInMissionList();
+                isInitialized = true;
             }
         }
 
         private void PopulateAllAgentsInMissionList()
         {
-            this.allHeroes.Clear();
+            allHeroes.Clear();
             foreach (Agent agent in base.Mission.AllAgents)
             {
                 if (agent.IsHero && agent.State == AgentState.Active)
-                    this.allHeroes.Add(agent);
+                    allHeroes.Add(agent);
             }
         }
 
@@ -52,7 +52,7 @@ namespace HealingOnKillBasedOnMedicineSkill
             bool reinforcementsAdded = false;
             foreach (Agent agent in base.Mission.AllAgents)
             {
-                if (agent.IsHero && agent.State == AgentState.Active && !this.allHeroes.Contains(agent))
+                if (agent.IsHero && agent.State == AgentState.Active && !allHeroes.Contains(agent))
                 {
                     reinforcementsAdded = true;
                     break;
@@ -60,20 +60,20 @@ namespace HealingOnKillBasedOnMedicineSkill
             }
 
             if (reinforcementsAdded)
-                this.PopulateAllAgentsInMissionList();
+                PopulateAllAgentsInMissionList();
         }
 
         public override void OnAgentRemoved(Agent affectedAgent, Agent affectorAgent, AgentState agentState, KillingBlow blow)
         {
             base.OnAgentRemoved(affectedAgent, affectorAgent, agentState, blow);
 
-            if (!settings.EnableHealingOnEnemyKill || !affectorAgent.IsHero)
+            if (!settings.EnableHealingOnEnemyKill)
                 return;
 
             if (affectedAgent == null || affectorAgent == null || affectedAgent == affectorAgent)
                 return;
 
-            foreach (Agent agent in this.allHeroes)
+            foreach (Agent agent in allHeroes)
             {
                 if (agent != null && agent == affectorAgent)
                 {
@@ -85,13 +85,18 @@ namespace HealingOnKillBasedOnMedicineSkill
                     if (calculatedNumber > settings.MaxHPToHeal)
                         calculatedNumber = maxHPToHeal;
 
+                    if (affectorAgent.IsMainAgent)
+                        calculatedNumber *= settings.MainHeroeHealingMultiplier;
+                    else
+                        calculatedNumber *= settings.NPCHeroesHealingMultiplier;
+
                     int amountToHeal = TaleWorlds.Library.MathF.Round(calculatedNumber);
 
+                    if (settings.EnableMinimumHealingOfOneHealth && amountToHeal < 1)
+                        amountToHeal = 1;
+
                     if (affectedAgent.IsHero)
-                    {
-                        this.PopulateAllAgentsInMissionList();
                         amountToHeal *= 2;
-                    }
 
                     agent.Health += amountToHeal;
                     if (agent.Health > agent.HealthLimit)
@@ -115,7 +120,7 @@ namespace HealingOnKillBasedOnMedicineSkill
 
         private void DisplayDetailedInformationMessage(Agent agent, int amountToHeal, float currentMedSkill, float calculatedNumber, Agent affectedAgent)
         {
-            var message = new TextObject("{=HOKBOMS_1ccm4}{HERO} killed {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nMedicine skill: {MED_SKILL}. Float: {CALC_HEAL}")
+            var message = new TextObject("{=HOKBOMS_1ccm4}{HERO} knocked down {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nMedicine skill: {MED_SKILL}. Float: {CALC_HEAL}")
                 .SetTextVariable("HERO", agent.Name)
                 .SetTextVariable("AFFECTED_AGENT", affectedAgent.Name)
                 .SetTextVariable("HEAL_AMOUNT", amountToHeal)

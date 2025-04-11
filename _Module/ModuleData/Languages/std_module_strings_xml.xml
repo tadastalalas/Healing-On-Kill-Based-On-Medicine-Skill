@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO} knocked down {AFFECTED_AGENT}. Recovered {HEAL_AMOUNT} HP." />
-		<string id="HOKBOMS_1ccm4" text="{HERO} killed {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nMedicine skill: {MED_SKILL}. Float: {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} knocked down {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nMedicine skill: {MED_SKILL}. Float: {CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} got Medicine skill experience: {MED_EXP} ({EXP_PERC} %)\nExperience needed in total: {MED_EXP_NEED}\nMedicine skill: {MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="Healing On Kill Based On Medicine Skill" />
 		<string id="HOKBOMS_mfxHR" text="Main modification settings" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Shows which specific hero kills an enemy and how much health he heals after kill.\nAlso shows calculated floating number which is rounded to determine actual healing amount in integer number.\nFormula: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Default: Disabled]" />
 		<string id="HOKBOMS_h6J6P" text="Show medicine experience information" />
 		<string id="HOKBOMS_1aRZ3" text="Shows detailed information of all heroes in the log, who gets medicine skill experience every hour. [Default: Disabled]" />
-		<string id="HOKBOMS_AYLgG" text="" />	<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />	<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />	<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />	<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />	<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />	<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Minimum healing of 1 health" />
+		<string id="HOKBOMS_2fbFj" text="Minimum healing of 1 health even if hero has too low medicine skill. [Default: Enabled]" />
+		<string id="HOKBOMS_5MPXR" text="Main heroe's healing multiplier" />
+		<string id="HOKBOMS_q46Oj" text="Main heroe's healing will be multiplied by this number. It multiplies calculated floating number while it is not rounded yet so when medicine skill is low the increase in healing will be not substantial. Overrides [Maximum healing amount] slider above. [Default: 1]" />
+		<string id="HOKBOMS_2DtDS" text="NPC heroes's healing multiplier" />
+		<string id="HOKBOMS_hoh62" text="NPC heroes's healing will be multiplied by this number. It multiplies calculated floating number while it is not rounded yet so when medicine skill is low the increase in healing will be not substantial. Overrides [Maximum healing amount] slider above. [Default: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />	<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />	<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />	<!-- {=HOKBOMS_4XArl} -->

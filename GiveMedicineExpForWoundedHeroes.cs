@@ -21,26 +21,38 @@ namespace HealingOnKillBasedOnMedicineSkill
 
             foreach (Hero hero in Hero.AllAliveHeroes)
             {
-                if (hero.PartyBelongedTo != null && !hero.IsHealthFull() && !hero.IsPrisoner && HasFood(hero))
+                if (!hero.IsHealthFull()) //  !hero.IsPrisoner  && HasFood(hero)
                 {
-                    int medSkillThreshold = settings.MaxMedSkillThreshold;
-                    int retrievedCurrentMedSkill = hero.GetSkillValue(DefaultSkills.Medicine);
-                    int expNeededForFullMedLevel = Campaign.Current.Models.CharacterDevelopmentModel.GetXpAmountForSkillLevelChange(hero, DefaultSkills.Medicine, 1);
-                    if (retrievedCurrentMedSkill > medSkillThreshold)
-                        retrievedCurrentMedSkill = medSkillThreshold;
-                    if (retrievedCurrentMedSkill == 0)
-                        retrievedCurrentMedSkill = 1;
-                    float calculatedFloat = ((float)medSkillThreshold / (float)retrievedCurrentMedSkill) / (float)settings.ExpPercentageDivisor;
-                    float expToAdd = (expNeededForFullMedLevel * calculatedFloat);
-                    float percent = (expToAdd / expNeededForFullMedLevel) * 100;
-                    if (settings.UseLearningRateModifier)
-                        hero.AddSkillXp(DefaultSkills.Medicine, expToAdd);
-                    else
-                        hero.HeroDeveloper.AddSkillXp(DefaultSkills.Medicine, expToAdd, false, true);
-                    if (settings.ShowMedicineExperienceInformation)
-                        DisplayHeroGotMedicineExpMessage(hero, expToAdd, percent, retrievedCurrentMedSkill, expNeededForFullMedLevel);
+                    if (hero.PartyBelongedTo != null || hero.PartyBelongedToAsPrisoner != null)
+                    {
+                        GrantMedicineExpToHero(hero);
+                    }
+                    else if (hero.IsPrisoner && hero.CurrentSettlement != null)
+                    {
+                        GrantMedicineExpToHero(hero, 0.5f);
+                    }
                 }
             }
+        }
+
+        private void GrantMedicineExpToHero(Hero hero, float expMultiplier = 1.0f)
+        {
+            int medSkillThreshold = settings.MaxMedSkillThreshold;
+            int retrievedCurrentMedSkill = hero.GetSkillValue(DefaultSkills.Medicine);
+            int expNeededForFullMedLevel = Campaign.Current.Models.CharacterDevelopmentModel.GetXpAmountForSkillLevelChange(hero, DefaultSkills.Medicine, 1);
+            if (retrievedCurrentMedSkill > medSkillThreshold)
+                retrievedCurrentMedSkill = medSkillThreshold;
+            if (retrievedCurrentMedSkill == 0)
+                retrievedCurrentMedSkill = 1;
+            float calculatedFloat = ((float)medSkillThreshold / (float)retrievedCurrentMedSkill) / (float)settings.ExpPercentageDivisor;
+            float expToAdd = (expNeededForFullMedLevel * calculatedFloat) * expMultiplier;
+            float percent = (expToAdd / expNeededForFullMedLevel) * 100;
+            if (settings.UseLearningRateModifier)
+                hero.AddSkillXp(DefaultSkills.Medicine, expToAdd);
+            else
+                hero.HeroDeveloper.AddSkillXp(DefaultSkills.Medicine, expToAdd, false, true);
+            if (settings.ShowMedicineExperienceInformation)
+                DisplayHeroGotMedicineExpMessage(hero, expToAdd, percent, retrievedCurrentMedSkill, expNeededForFullMedLevel);
         }
 
         private bool HasFood(Hero hero)

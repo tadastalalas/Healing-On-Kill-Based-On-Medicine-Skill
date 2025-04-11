@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO} a renversé {AFFECTED_AGENT}. A récupéré {HEAL_AMOUNT} PV." />
-		<string id="HOKBOMS_1ccm4" text="{HERO} a tué {AFFECTED_AGENT}. + {HEAL_AMOUNT} PV.\nCompétence en médecine : {MED_SKILL}. Flottant : {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} a renversé {AFFECTED_AGENT}. + {HEAL_AMOUNT} PV.\nCompétence en médecine : {MED_SKILL}. Flottant : {CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} a obtenu une expérience en compétence Médecine : {MED_EXP} ({EXP_PERC} %)\nExpérience nécessaire au total : {MED_EXP_NEED}\nCompétence Médecine : {MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="Guérison après élimination basée sur la compétence en médecine" />
 		<string id="HOKBOMS_mfxHR" text="Principaux paramètres de modification" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Affiche le héros spécifique qui tue un ennemi et la quantité de santé qu'il récupère après l'avoir tué.\nAffiche également un nombre flottant calculé qui est arrondi pour déterminer la quantité de soins réelle en nombre entier.\nFormule : currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Par défaut : désactivé]" />
 		<string id="HOKBOMS_h6J6P" text="Afficher les informations sur l'expérience médicale" />
 		<string id="HOKBOMS_1aRZ3" text="Affiche des informations détaillées sur tous les héros du journal, qui acquièrent de l'expérience en médecine toutes les heures. [Par défaut : désactivé]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Guérison minimale de 1 point de vie" />
+		<string id="HOKBOMS_2fbFj" text="Soin minimum de 1 point de vie même si le héros a une compétence en médecine trop faible. [Par défaut : Activé]" />
+		<string id="HOKBOMS_5MPXR" text="Multiplicateur de soins du héros principal" />
+		<string id="HOKBOMS_q46Oj" text="Les soins du héros principal seront multipliés par ce nombre. Il multiplie le nombre flottant calculé alors qu'il n'est pas encore arrondi, donc lorsque la compétence en médecine est faible, l'augmentation des soins ne sera pas substantielle. Remplace le curseur [Quantité de soins maximale] ci-dessus. [Par défaut : 1]" />
+		<string id="HOKBOMS_2DtDS" text="Multiplicateur de soins des héros PNJ" />
+		<string id="HOKBOMS_hoh62" text="Les soins des héros PNJ seront multipliés par ce nombre. Il multiplie le nombre flottant calculé alors qu'il n'est pas encore arrondi, donc lorsque la compétence en médecine est faible, l'augmentation des soins ne sera pas substantielle. Remplace le curseur [Quantité de soins maximale] ci-dessus. [Par défaut : 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

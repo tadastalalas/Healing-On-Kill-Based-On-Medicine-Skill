@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="HOKBOMS_93u1X" text="{HERO} ha atterrato {AFFECTED_AGENT}. Ha recuperato {HEAL_AMOUNT} HP." />
-		<string id="HOKBOMS_1ccm4" text="{HERO} ha ucciso {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nAbilità medica: {MED_SKILL}. Float: {CALC_HEAL}" />
+		<string id="HOKBOMS_1ccm4" text="{HERO} ha atterrato {AFFECTED_AGENT}. + {HEAL_AMOUNT} HP.\nAbilità medica: {MED_SKILL}. Float: {CALC_HEAL}" />
 		<string id="HOKBOMS_Sa1Xq" text="{HERO} ha ottenuto esperienza in abilità di medicina: {MED_EXP} ({EXP_PERC} %)\nEsperienza necessaria in totale: {MED_EXP_NEED}\nAbilità di medicina: {MED_SKILL}" />
 		<string id="HOKBOMS_WxWoy" text="Guarigione all'uccisione basata sull'abilità della medicina" />
 		<string id="HOKBOMS_mfxHR" text="Impostazioni di modifica principali" />
@@ -29,12 +29,12 @@
 		<string id="HOKBOMS_O9bNV" text="Mostra quale eroe specifico uccide un nemico e quanta salute cura dopo l'uccisione.\nMostra anche un numero decimale calcolato che viene arrotondato per determinare la quantità effettiva di guarigione in un numero intero.\nFormula: currentMedSkill / (maxMedSkillThreshold / maxHPToHeal). [Default: Disabilitato]" />
 		<string id="HOKBOMS_h6J6P" text="Mostra informazioni sull'esperienza medica" />
 		<string id="HOKBOMS_1aRZ3" text="Mostra informazioni dettagliate su tutti gli eroi nel registro, che ottengono esperienza nelle abilità mediche ogni ora. [Default: Disabilitato]" />
-		<string id="HOKBOMS_AYLgG" text="" />		<!-- {=HOKBOMS_AYLgG} -->
-		<string id="HOKBOMS_2fbFj" text="" />		<!-- {=HOKBOMS_2fbFj} -->
-		<string id="HOKBOMS_5MPXR" text="" />		<!-- {=HOKBOMS_5MPXR} -->
-		<string id="HOKBOMS_q46Oj" text="" />		<!-- {=HOKBOMS_q46Oj} -->
-		<string id="HOKBOMS_2DtDS" text="" />		<!-- {=HOKBOMS_2DtDS} -->
-		<string id="HOKBOMS_hoh62" text="" />		<!-- {=HOKBOMS_hoh62} -->
+		<string id="HOKBOMS_AYLgG" text="Guarigione minima di 1 salute" />
+		<string id="HOKBOMS_2fbFj" text="Guarigione minima di 1 salute anche se l'eroe ha un'abilità di medicina troppo bassa. [Predefinito: Abilitato]" />
+		<string id="HOKBOMS_5MPXR" text="Moltiplicatore di guarigione dell'eroe principale" />
+		<string id="HOKBOMS_q46Oj" text="La guarigione dell'eroe principale verrà moltiplicata per questo numero. Moltiplica il numero mobile calcolato finché non è ancora arrotondato, quindi quando l'abilità di medicina è bassa, l'aumento della guarigione non sarà sostanziale. Sostituisce il cursore [Quantità massima di guarigione] sopra. [Default: 1]" />
+		<string id="HOKBOMS_2DtDS" text="Moltiplicatore di guarigione degli eroi PNG" />
+		<string id="HOKBOMS_hoh62" text="La guarigione degli eroi NPC verrà moltiplicata per questo numero. Moltiplica il numero mobile calcolato finché non è ancora arrotondato, quindi quando l'abilità di medicina è bassa, l'aumento della guarigione non sarà sostanziale. Sostituisce il cursore [Quantità massima di guarigione] sopra. [Default: 2]" />
 		<string id="HOKBOMS_TvJuP" text="" />		<!-- {=HOKBOMS_TvJuP} -->
 		<string id="HOKBOMS_5ReZh" text="" />		<!-- {=HOKBOMS_5ReZh} -->
 		<string id="HOKBOMS_4XArl" text="" />		<!-- {=HOKBOMS_4XArl} -->

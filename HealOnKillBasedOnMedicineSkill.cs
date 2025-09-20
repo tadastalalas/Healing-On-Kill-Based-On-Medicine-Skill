@@ -112,7 +112,7 @@ namespace HealingOnKillBasedOnMedicineSkill
                             .SetTextVariable("AFFECTED_AGENT", affectedAgent.Name)
                             .SetTextVariable("HEAL_AMOUNT", amountToHeal);
 
-                        MBInformationManager.AddQuickInformation(new TextObject(message.ToString()), 2000, null, "event:/ui/notification/levelup");
+                        MBInformationManager.AddQuickInformation(new TextObject(message.ToString()), 2000, null, null, "event:/ui/notification/levelup");
                     }
                 }
             }

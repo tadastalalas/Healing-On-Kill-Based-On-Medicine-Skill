@@ -21,7 +21,7 @@ namespace HealingOnKillBasedOnMedicineSkill
 
             foreach (Hero hero in Hero.AllAliveHeroes)
             {
-                if (!hero.IsHealthFull()) //  !hero.IsPrisoner  && HasFood(hero)
+                if (!hero.IsHealthFull())
                 {
                     if (hero.PartyBelongedTo != null || hero.PartyBelongedToAsPrisoner != null)
                     {
